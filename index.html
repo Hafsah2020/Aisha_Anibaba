@@ -99,7 +99,22 @@
 <section class="mb-12" id="about">
 <h3 class="text-2xl font-bold mb-4">Who am I?</h3>
 <p class="text-base md:text-lg text-black/60 dark:text-white/60 max-w-3xl">A passionate and dedicated Surveying and Geoinformatics Engineering student of University of Lagos with a strong foundation in data analysis and a keen interest in leveraging GIS technologies to solve real-world problems. Eager to learn, grow, and contribute to innovative projects.</p>
-</section>
+</section>  <!-- Skills Section Start -->
+  <section class="mb-12" id="skills">
+    <h3 class="text-2xl font-bold mb-4">Skills</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Content Writing</span>
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Creativity</span>
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Teamwork</span>
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Communication</span>
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Leadership</span>
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Problem Solving</span>
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Research</span>
+      <span class="inline-block bg-primary/10 text-primary dark:bg-primary/20 dark:text-white px-4 py-2 rounded-full text-sm font-medium">Public Speaking</span>
+    </div>
+  </section>
+  <!-- Skills Section End -->
+
 <section class="mb-12" id="trainings" x-data="{
                 skip: 1,
                 atBeginning: true,
@@ -226,35 +241,47 @@
     },
     to(idx) {
         this.skip = idx;
-        let el = document.querySelector('#projects .scroll-container');
+        let el = document.querySelector('#blog .scroll-container');
         let child = el.querySelector(`.snap-center:nth-child(${this.skip})`);
         el.scrollLeft = child.offsetLeft - child.parentElement.offsetLeft;
         this.atBeginning = this.skip === 1;
         this.atEnd = this.skip === 3;
     },
 }">
-  <h3 class="text-2xl font-bold mb-4">Projects Showcase</h3>
+  <h3 class="text-2xl font-bold mb-4">My Works</h3>
   <div class="relative">
     <div class="scroll-container flex overflow-x-hidden snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="flex-shrink-0 w-[80vw] snap-center mr-4 md:w-auto md:mr-0 flex flex-col gap-3">
         <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZOdNhxlnO5dqpiG0ov139Ii2cVrKI-KUOR1SthIzti9GSrUK799CpvaSvH71x7c1LFK76Lb624_-z5Z2mS7e7dAZsxX6wTrypfQzMvjeHDN2JXSkN0pg42_JDl8L_WGYspHULuHOhYmE5Im5puUcW0L0A8TFRArXYtyzfcRW9LnBzK-1t2YDoXvP0tP6gBv6nDdAz7_cW19iti9AZqB_COJqgox479_mXYUO_WQdns88dUpGIMWyGcrUmS_CPmRiwkCDJMRsApgg");'></div>
         <div>
-          <h4 class="font-medium text-lg">AI-Powered Study Planner</h4>
-          <p class="text-base text-black/60 dark:text-white/60">A smart planner that optimizes study schedules.</p>
+          <h4 class="font-medium text-lg">Project 1</h4>
+          <p class="text-base text-black/60 dark:text-white/60">Summary of purpose</p>
+          <button class="mt-2 inline-flex items-center bg-primary text-white py-1.5 px-4 rounded-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary text-sm">
+        View
+        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+          </button>
         </div>
       </div>
       <div class="flex-shrink-0 w-[80vw] snap-center mr-4 md:w-auto md:mr-0 flex flex-col gap-3">
         <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClcl1o1ICuTvsbcZC3SO7TsnKPF6CXjUyGwdJdWShhlZQeL5E1y-egU2dJQzvEVq0ASliN7J5_ec5vKOG0w3NLKAmH4aCuVSjpt6ke-e0Xq4U_kM6SB1OKCvE2mpFhZcHAVRriydcf3cTwtC3YCWgqvGyjdCU5StsaxnRqQ2vQpSRDVVm80n050Tom49ssrPoVaVl7phR5sMiR89DAuoUOd_8UAh4r3vVEaMQ4zl-I6_gnpudG8PxXCqmB2fuDoG7hSNg0_-3j3h0");'></div>
         <div>
-          <h4 class="font-medium text-lg">E-commerce Website</h4>
-          <p class="text-base text-black/60 dark:text-white/60">A fully functional online store for handmade goods.</p>
+          <h4 class="font-medium text-lg">Project 2</h4>
+          <p class="text-base text-black/60 dark:text-white/60">Summary of purpose</p>
+          <button class="mt-2 inline-flex items-center bg-primary text-white py-1.5 px-4 rounded-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary text-sm">
+        View
+        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+          </button>
         </div>
       </div>
       <div class="flex-shrink-0 w-[80vw] snap-center mr-4 md:w-auto md:mr-0 flex flex-col gap-3">
         <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg bg-gray-300 dark:bg-gray-700"></div>
         <div>
-          <h4 class="font-medium text-lg">Project Title 3</h4>
-          <p class="text-base text-black/60 dark:text-white/60">A brief description of the project.</p>
+          <h4 class="font-medium text-lg">Project 3</h4>
+          <p class="text-base text-black/60 dark:text-white/60">Summary of purpose</p>
+          <button class="mt-2 inline-flex items-center bg-primary text-white py-1.5 px-4 rounded-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary text-sm">
+        View
+        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+          </button>
         </div>
       </div>
     </div>
